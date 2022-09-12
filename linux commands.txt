@@ -1,0 +1,97 @@
+-Consola de comandos de Windows
+dir: Listado de carpetas
+cd "nombre": Entrar a la carpeta nombre
+cd ..: Regresar al documento padre
+cd /: Regresar a la raíz de la carpeta
+cd "Ruta": Ir a la carpeta ruta
+cls (clear screen): Limpiar terminal
+exit: Cerrar consola
+mkdir "nombre": Crear carpeta nombre
+rmdir "nombre": Eliminar carpeta
+"hola" > archivo.txt: Crear archivo.txt con el contenido hola
+del archivo.txt: Eliminar archivo.txt
+copy archivo.txt archivo2.txt: Copiar archivo.txt a archivo2.txt
+move archivo.txt "carpeta": Mover archivo a la carpeta
+ipconfig && ipconfig/all: Listado de ip
+help: Ayuda
+find "nombre" *.extensión: Busca archivos nombre con la extensión
+dir > contenido.txt: Genera un archivo de texto con el contenido de dir
+tasklist: Listado de tareas ejecutándose
+taskill /IM nombre: Cerrar la tarea nombre
+
+-Introducción a la terminal UNIX
+cd ~ : Ir a home
+man "comando: : Ayuda del comando
+reboot: Reiniciar
+exit: Cerrar la terminal
+clear: Limpiar la terminal (CRTL + L)
+history: Historial de comandos
+history -c : Borrar historial
+
+--Ficheros y directorios
+ls: Listar directorios || -lh(forma de listado) || -a(listado archivos ocultos)
+mkdir "nombre" : Crear carpeta nombre || -p(Para crear carpeta y subcarpeta)
+pwd: Donde estoy
+rmdir nombre : Eliminar carpeta
+rm -rf carpeta : Eliminar carpeta forzadamente
+touch archivo.txt: Crear archivo.txt
+echo "text" > archivo.txt: Añadir texto a archivo.txt
+cat archivo.txt: Muestra su contenido
+mv archivo.txt carpeta/archivo.txt: Mueve el archivo a la carpeta
+cp carpeta/* ./ : Copiar carpeta a directorio actual
+df -h: Espacio disponible en el equipo
+du /carpeta -h: Cuanto espacio ocupa la carpeta
+nano ruta: Editar contenido de la ruta
+whoami: Usuario identificado
+useradd -g users -d /home/Laeka -s /bin/bash -m -k -D laekagg:Crear un nuevo usuario
+
+--Permisos (LINUX Y MAC)
+chmod 777 archivo : Permisos de lectura, escritura y ejecucion para todos
+chmod 700 archivo: Permisos para el usuario que creo el archivo
+chmod 400 archivo: Permiso solo de lectura
+chmod 200 archivo: Permiso solo de escritura
+chmod 100 archivo: Permiso solo de ejecucion
+chmod 000 archivo: Ningún permiso
+chmod 600 archivo: Permiso solo de lectura y escritura
+chown usuario: users archivo : Cambiar de dueño del archivo
+groups usuario: Muestra a que grupo pertenece el usuario
+
+--Comandos de la red (LINUX Y MAC)
+ifconfig: Características
+ping -c 20 www.google.com : 20 Peticiones a google
+https://victorroblesweb.es/2015/01/03/gestion-de-la-red-en-linux/
+
+--Gestión de paquetes (LINUX)
+nano /etc/apt/sources.list : Listado de paquetes de software del servidor
+apt-get update: Actualizar repositorios
+apt-get install aptitude : Instala el programa aptitude para manejar paquetes
+aptitude update : Actualiza el programa
+aptitude search programa : Busca los paquetes del programa
+aptitude install programa : Instala el programa
+
+--Proceso (LINUX Y MAC)
+ps -ef: Procesos abiertos
+pstree -agu : Árbol de procesos
+kill PID: Elimina el proceso
+top : Monitorio el tiempo real
+
+--Filtros y comandos de texto
+sort ruta : Ordenar el fichero || -r : Ordena de manera inversa
+tail ruta : Saca las 10 últimas  líneas de la carpeta || -n 3 : Saca las ultimas 3 líneas
+head -n 6 ruta: Las 6 primeras líneas de la carpeta
+
+--Búsqueda de texto y ficheros
+grep texto ruta : Busca la línea que contiene la palabra texto en la ruta
+grep -c texto texto ruta : Busca el número de coincidencias de la palabra texto en la ruta
+find ruta -name "*.extensión" : Busca todos los archivos que tengan la extensión
+
+***
+Commands:
+ln: crea un link simbolico para archivos
+ln para archivos:
+ln -s [target file] [Symbolic filename]
+ln para carpetas:
+ln -s [Specific file/directory] [symlink name]
+remover ln
+unlink [symlink to remove]
+rm [symlink name]

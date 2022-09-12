@@ -1,0 +1,55 @@
+!!!!MANAGE DOTFILES TO YAMD O GNU STOW DONT BE STUPID!!!!
+GNU STOW
+YADM
+
+📂 ~/.config/nvim
+├── 📁 after
+├── 📁 ftplugin
+├── 📂 lua
+│  ├── 🌑 myluamodule.lua
+│  └── 📂 other_modules
+│     ├── 🌑 anothermodule.lua
+│     └── 🌑 init.lua
+├── 📁 pack
+├── 📁 plugin
+├── 📁 syntax
+└── 🇻 init.vim
+
+/Packer
+lazy loading::
+plugins se van a la carpeta opt
+solo se ejecutan con un comando o evento
+
+start::
+se encuentran en la carpeta start y se ejecutan inmediato
+
+/Colorschemes
+vim.cmd "Colorschemes *****"
+local colorscheme = "default"
+
+local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
+if not status_ok then
+  vim.notify("colorscheme " .. colorscheme .. " not found!")
+  return
+end
+
+/Autocompletion
+nvim-cmp
+
+/notify
+require"notify"("error message", "warn-error-info-debug-tracer", {title="package"})
+
+/nerd fonts
+nerdfonts.com/cheat-sheet
+
+/LSP
+:LspInfo = da informacion de que lenguaje esta corriendo
+https://www.schemastore.org/json/
+
+on_attach
+
+<c-t> devuelve el go defenition
+no map for c-t
+
+
+

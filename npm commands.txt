@@ -1,0 +1,24 @@
+NPM
+npm i **** --save-dev :: instala en las dependencias de desarrollo
+npm i *** --D ::instala dependencia de desarrollo
+npm i *** -S ::instala dependecia local
+sudo npm install -g **** ::instala paquete global (https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally)
+npm list -g --depth 0 ::lista de los pquetes instalados global
+npm install **** -O ::instala de manera opcional
+npm install **** -f ::instala de manera forzada la ultima version y los servidores de npm
+npm install ::instala todas las dependencias
+npm install --production ::instalar unicamente las dependecias de produccion
+npm install ****@version :: instala la version que desees
+npm list ::lista los paquetes
+npm outdate :: busca los paquetes desactualizados
+npm outdate --dd :: busca los paquetes desactualizados - output más detallado
+npm update ::actualiza los paquetes a la ultima version
+npm install ****@latest ::instala la ultima version del paquete
+npm unistall **** :: desinstala el paquete
+npm unistall **** --no-save ::desinstalar un paquete de todo node_modules pero no del archivo package.json
+npm cache clean --force :: elimina el cache del sistema
+npm cache verify :: verifica si fue eliminado el cache
+rm -rf node_modules :: elimina la carpeta
+sudo npm install -g rimraf ::eliminar de forma segura una carpeta
+npm audit --json ::una auditoria generada en json de los paquetes
+npm audit fix ::actualiza las dependecias para que no tenga vulnerabilidades
