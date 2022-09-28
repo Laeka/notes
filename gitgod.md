@@ -1,4 +1,8 @@
 # GIT
+## Configurar usuario
+  - git config -global user.name `nombre` :: configurar nombre
+  - git config -global user.email `email` :: configurar email 
+  - git config -list :: listar usuarios
 ## Cambios en los archivos de git:
   - git show `archivo` :: muestra los cambios en el archivo
   - git status :: visualizar los estados de archivos y carpetas
@@ -12,13 +16,13 @@
   - git reset HEAD (--hard)(--soft)`idComit`:: devuelvo los archivos en staged/unstaged/untracked
 
 ## Staging: 
-<p> Area en memoria ram donde los archivos pasan para llegar a la repo(.git)</p>
+Area en memoria ram donde los archivos pasan para llegar a la repo(.git)
   - git add :: lo agrega al Staging(untracked->unstaged)
   - git rm `--cached(move to untracked)` `--force(remove total)`:: lo elimina del staging
   - git commit :: lo agrega al repositorio(.git/master)(unstaged->tracked)
 
 ## Ramas:
-<p>version del codigo del proyecto</p>
+version del codigo del proyecto
   - git branch `nombre` :: crear una rama
   - git show-branch --all :: info detallada de las ramas
   - git branch -r : ramas remotas
@@ -33,7 +37,7 @@
     - git merge --abort :: cancela el merge
 
 ## Tags - Versiones:
-<p> Permiten asignar versiones a los commits con cambios importantes </p>
+Permiten asignar versiones a los commits con cambios importantes
   - git tag -a `tagName` `idComit` :: crear tag y asignarlo a un commit
   - git tag -d `tagName` :: borrar tag 
   - git tag | git show-ref --tags :: listar tags
@@ -109,4 +113,34 @@
   - git reflog :: muestra todos los cambios realizados
 
 #### Forks - Bifurcaciones:
-<p>Copia exacta del estado actual de un repo de github y clonarlo como un proyecto mio</p>
+
+#### Ejemplo de ramas:
+  - Feature branch:
+    - git checkout -b `feature-feXXX` master :: crea un branch local para la nueva feature
+    - git push origin `feature-feXXX` :: lleva la feature a remoto
+    - git merge master :: trae los cambios de master a la feature
+    - git checkout master :: cambiar a rama master
+    - git merge --no-ff `feature-feXXX` :: asegura de que se cree el commit durante el merge
+    - git push origin master :: sube los cambios del merge
+    - git push origin :`feature-feXXX` :: elimina la branch remota
+  - Bug branch:
+    - git checkout -b `bug-bgXXX` master :: crea un branch local del bug
+    - git push origin `bug-bgXXX` :: lleva el bug a remoto
+    - git merge master 
+    - git checkout master
+    - git merge --no-ff `bug-bgXXX`
+    - git push origin master
+    - git push origin :`bug-bgXXX`
+  - Hotfixes branch:
+    - git checkout -b `hotfix-hfXXX` stable
+    - git push origin `hotfix-hfXXX`
+    - git checkout stable
+    - git merge --no-ff `hotfix-hfXXX`
+    - git tag -a `tag` :: crea un tag del fix
+    - git push origin stable --tags :: sube los cambios del tag
+    - git checkout master
+    - git merge --no-ff `hotfix-hfXXX`
+    - git push origin master
+    - git push origin :`hotfix-hfXXX`
+
+Copia exacta del estado actual de un repo de github y clonarlo como un proyecto mio

@@ -2,9 +2,12 @@
 
 ## TODO::
 
-    - :TODO need better way to do this maybe zsh functions > zshrc
+    - need better way to do this maybe zsh functions > zshrc
+    - Mostrar las carpetas en ls con iconos=
+    - copydir zsh=
+    - Luasnip no working
     
-## NOTE
-    - :NOTE try statusline [https://github.com/nvim-lua/lsp-status.nvim]
-    - :NOTE try lazygit
+## NOTE :
+    - try lazygit
     
+

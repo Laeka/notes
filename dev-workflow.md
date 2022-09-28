@@ -19,3 +19,9 @@
     - polkit-gnome - Hook up for authentication/elevation stuff
     - polybar - A configurable status bar
     - rofi - A sweet sweet launcher (alternative to dmenu)
+
+## Tmux
+  - ``` sudo dnf install tmux ripgrep```
+    - ~/.tmux/${archivos de conf}
+  - oh my tmux - github/gepakosz/tmux
+  - TMP : tmux plugin 
