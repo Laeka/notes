@@ -164,6 +164,9 @@
       - "<c-d>", [[<cmd>Telescope find_files theme=get_dropdown<cr>)
       - "<c-g>", [[<cmd>Telescope live_grep theme=get_dropdown<cr>]
 
+    - Notify
+      - <leader>nh :: open notifys
+
     - command palette
       - "<space>k", [[<Cmd>:Telescope command_palette<CR>]]
     
@@ -224,6 +227,7 @@
     - Session
       - prefix ctrl c : create new session
       - prefix ctrl f : find session 
+      - prefix + d : detach session
 
     - Copy mode
       - prefix enter : copy mode
@@ -236,3 +240,58 @@
       - ctrl + s : search word
       - prefix m : toogle mouse 
 
+## Ranger
+  - q : QUIT
+  - i : display
+  - W : display log
+  - w : tasks view
+  - S : go to shell
+  - : console
+  - ; console
+  -  s  console shell%space
+  -  r  chain draw_possible_programs; console open_with%space
+  -  f  console find%space
+  -  cd console cd%space
+  -  <C-p> : ultimo comando de la consola
+  - M : informacion de los archivos
+  - t : tag-toggle
+  - " : any tag
+  - space : select cursor
+  - v : select all
+  - V : visual mode
+  - u : remove things
+  - F1 :help
+  - F2: rename
+  - F3 : display
+  - F4 : edit
+  - F5 : copy
+  - F6 : cut
+  - F7 : console mkdir
+  - F8 : console delete
+  - F10 : exit
+  - g : go to folder
+  - bg : set feh background
+  - yy : copy
+  - uy : uncut
+  - ya : copy mode add
+  - yr : copy mode remove
+  - yt : copy mode toogle
+  - dgg : cut cursor and all top
+  - dG : cut cursor and all bottom
+  - dj : cut cursor and one bottom
+  - dk : cut cursor and one top
+  - ygg - yG - yj - yk : same commands cut but instead copy
+  - / : console search
+  - n : search next 
+  - N : search before
+  - c : commands to search with some order
+  - gn : new tab
+  - gc : close tab
+  - uq : restore tab
+  - gt : move next tab
+  - gT : move before tab
+  - ALT + # : move to # tab
+  - ALT + r : change +1 number tab
+  - ALT + l : change -1 number tab
+  - o : commands to sorting
+  - z : commands to settings

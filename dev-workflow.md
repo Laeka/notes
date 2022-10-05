@@ -1,5 +1,29 @@
 # DEV-WORKFLOW
 
+## Fedora
+  - terminal file manager: ranger
+
+## Firefox
+  - ``` sudo dnf install firefox ```
+  - search about:config - legacy - make true stylesheets  
+  - in terminal cd .mozilla/firefox look for cd profile.default-release
+  - mkdir chrome
+  - nvim userChrome.css - steal for others css(linux method)
+  - dark reader please
+  - spellchecker
+  - tabs-groups
+
+## Kitty / Alacritty
+  - Rofi : window siwtcher, application launcher and dmenu replacement
+  - Zsh :
+    - HOME – Represents the home directory for the current user.
+    - SHELL – Shows the path of the current user’s shell.
+    - USER – Shows the currently logged-in user.
+    - PATH – Contains a list of directories to be searched for executable files when a command is executed.
+    - LANG – Shows locale settings, including character encoding
+    - TERM – Refers to the current terminal emulation.
+    - _ – Shows the previously executed command for that user.
+
 ## I3
   - ``` sudo dnf install i3 i3status dmenu i3lock xbacklight feh conky ```
     - i3 is the main window manager package.
@@ -18,10 +42,16 @@
     - dunst - Notifications
     - polkit-gnome - Hook up for authentication/elevation stuff
     - polybar - A configurable status bar
+      - make bar transparent put 00 - aa - bb ... to begining of the hexcode
     - rofi - A sweet sweet launcher (alternative to dmenu)
+
+    - Manage monitor
 
 ## Tmux
   - ``` sudo dnf install tmux ripgrep```
     - ~/.tmux/${archivos de conf}
   - oh my tmux - github/gepakosz/tmux
   - TMP : tmux plugin 
+  - Detaching session es mandar la session a background y attach es traerla
+
+## Neovim

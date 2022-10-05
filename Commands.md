@@ -1,5 +1,16 @@
 # Commands
 
+## Linux::
+  - #### WIFI CONFIG
+    - ip a : identify network devices
+    - nmcli radio WIFI
+    - nmcli dev status : network status
+    - nmcli dev wifi list : list of available wifi
+    - sudo nmcli --ask dev wifi connect <SSID> : connect to the wifi ssid
+
+  - #### Utils
+    - locate - whereis : need more info
+
 ## zsh::
 
   - alias zshrc="nvim ~/.zshrc"
