@@ -10,6 +10,11 @@
 
   - #### Utils
     - locate - whereis : need more info
+    - cd - : go to the before folder
+    - ctrl + r : search some commands
+    - ctrl + k : delete cursor to the end
+    - ctlr + u : delete all the line
+
 
 ## zsh::
 
@@ -31,17 +36,6 @@
     - alias ghweb='gh repo view --web'
     - alias gu='gitui'
     - alias ng='npm init -y && git init && echo "node_modules" >> .gitignore'
-  - #### alias to manage .dotfiles
-    - alias kittyrm="rm -rf ~/.dotfiles/kitty/.config/kitty/"
-    - alias kittycp="cp -r ~/.config/kitty/ ~/.dotfiles/kitty/.config/kitty/"
-    - alias neofetchrm="rm -rf ~/.dotfiles/neofetch/.config/neofetch/"
-    - alias neofetchcp="cp -r ~/.config/neofetch/ ~/.dotfiles/neofetch/.config/neofetch/"
-    - alias nvimrm="rm -rf ~/.dotfiles/neovim/.config/nvim/"
-    - alias nvimcp="cp -r ~/.config/nvim/ ~/.dotfiles/neovim/.config/nvim/"
-    - alias zshrm="rm -rf ~/.dotfiles/zsh/.zshrc"
-    - alias zshcp="cp -r ~/.zshrc ~/.dotfiles/zsh/.zshrc"
-    - alias dotrm="kittyrm && neofetchrm && nvimrm && zshrm"
-    - alias dotcp="kittycp && neofetchcp && nvimcp && zshcp"
 
 ## NoeVim::
 

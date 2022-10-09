@@ -46,6 +46,7 @@
     - rofi - A sweet sweet launcher (alternative to dmenu)
 
     - Manage monitor
+    - wmctrl : para saber el class name ..etc de los windows
 
 ## Tmux
   - ``` sudo dnf install tmux ripgrep```
@@ -55,3 +56,8 @@
   - Detaching session es mandar la session a background y attach es traerla
 
 ## Neovim
+
+## Git
+  - .gitconfig
+  - git-credential-libsecret to storage password
+  - git-delta pager to see better diff
