@@ -51,5 +51,13 @@ on_attach
 <c-t> devuelve el go defenition
 no map for c-t
 
+*******************************************************************************
+NEOVIM RC FROM SCRATCH
+/ Remove ~/.local/share/nvim
+/ create folders needed
+/ keymaps setup
+/ install packer - plenary
+/ install plugins you need 
+/ set settings
 
 
