@@ -10,6 +10,7 @@
   - improve $home directory with xdg-ninja = robando-dotfiles/xdg-ninja
     
   - eliminar el api de aws de el test junior
+  - check picom no startup
 
 ## NOTE :
   - try lazygit
