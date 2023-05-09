@@ -9,8 +9,7 @@
   - Telescope: resume() not working, check for frecuency keymap
   - improve $home directory with xdg-ninja = robando-dotfiles/xdg-ninja
     
-  - eliminar el api de aws de el test junior
-  - check picom no startup
+  - bdelete en neovim para eliminar single buffer
 
 ## NOTE :
   - try lazygit
@@ -18,5 +17,3 @@
 
 ## PERF: 
   - Node js debugger
-  - couse arquitectura software
-  - start apitiendita
