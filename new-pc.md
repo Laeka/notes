@@ -1,4 +1,5 @@
 - install fedora iso
+-sudo usermod -aG sudo <user> : add user to sudo group
 - install git - xinput - vim
 - upgrade system : sudo dnf upgrade --refresh -y
 - dependecyes requires : sudo dnf install dnf-plugins-core -y
@@ -10,9 +11,10 @@
 - add flatpak
 - change hostname: sudo hostnamectl set-hostname name
 - install media core : sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+- install dnf polybar picom dunst sxhkd
 - git clone dotfiles if you have
 - install stow
-- stow i3 - polybar - picom
+- stow i3 - polybar - picom - dunst
 - screen tearing i3 /etc/X11/xorg.conf.d/20-intel.conf
 Section "Device"
  
@@ -24,10 +26,14 @@ Section "Device"
  
 EndSection
 
-- stow alacritty - zsh - oh my zsh - p10k
+- install rofi
+- stow rofi
+- install nautilus
 - install nerd font mono ~/.local/share/fonts : fc-cache -f -v
 - list fonts : fclist | grep 
+- stow alacritty - zsh - oh my zsh - p10k
 - sudo dnf install zsh - git clone oh my zsh - p10kconfigure
+- change terminal to zsh
 - reboot
 - install neovim from source
 - install req - git clone neovim - upnvim zsh function

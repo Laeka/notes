@@ -57,10 +57,10 @@
   - i3-config-wizard :: restore config
 
 ## Stow
-  - stow -nvt ~ *
-  - stow --adopt -vt ~ *
-  - stow -vDt ~ *
-  - stow -vSt ~ *
+  - stow -nvt ~ * : simulation mode
+  - stow --adopt -vt ~ * : move and link 
+  - stow -vDt ~ * : unlink 
+  - stow -vSt ~ * : link
 
 ## tmux
   - tmux new -s name :: new session

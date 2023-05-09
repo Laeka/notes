@@ -1,4 +1,7 @@
 # Errores
+## Linux
+  - Not permission to write files because owner file
+    - Need to change owner file with chown mod
 ## Nvim
   - Treesitter ld o cc error:
     - brew unlink binutils para usar el ld de usr/bin

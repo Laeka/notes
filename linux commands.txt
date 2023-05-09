@@ -59,7 +59,6 @@ groups usuario: Muestra a que grupo pertenece el usuario
 --Comandos de la red (LINUX Y MAC)
 ifconfig: Características
 ping -c 20 www.google.com : 20 Peticiones a google
-https://victorroblesweb.es/2015/01/03/gestion-de-la-red-en-linux/
 
 --Gestión de paquetes (LINUX)
 nano /etc/apt/sources.list : Listado de paquetes de software del servidor
